@@ -1,4 +1,10 @@
-﻿Console.WriteLine("Введите количество чисел:");
+﻿//Задача 41: Пользователь вводит с клавиатуры M чисел.
+//Посчитайте, сколько чисел больше 0 ввёл пользователь.
+
+//0, 7, 8, -2, -2 -> 2
+//1, -7, 567, 89, 223-> 3
+
+Console.WriteLine("Введите количество чисел:");
 int l = Convert.ToInt32( Console.ReadLine());
 double [] array = new double [l];
 
@@ -28,7 +34,7 @@ int PosNum(double [] array)
     {
     int n = 0;
     foreach(double el in array)
-        if (el >= 0)
+        if (el > 0)
             n++;
     return n;
     }
