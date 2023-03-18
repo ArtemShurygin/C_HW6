@@ -32,3 +32,4 @@ int PosNum(double [] array)
             n++;
     return n;
     }
+    
